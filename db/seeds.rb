@@ -1,5 +1,10 @@
-spock = Author.create(name: "Spock", status: "Admin")
+spock_description = "Science officer on the Starship Enterprise. Logic
+is the foundation of all knowledge, and I have plenty of it."
+
+spock = Author.create(name: "Spock", status: "Admin", description: spock_description)
 kirk = Author.create(name: "Kirk")
+
+spocks_blog = Blog.create(author: spock, title: "Spock's Blog")
 
 star_trek_tag = Tag.create(name: "Star Trek")
 
