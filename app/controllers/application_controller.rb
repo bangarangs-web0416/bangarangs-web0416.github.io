@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   helper_method :blog
 
   def blog
-    Blog.first
+    blog = Blog.first
+    BlogDecorator.new(blog)
   end
 end
