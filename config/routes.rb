@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :posts, only: [:index, :show]
+  resources :home, only: [:index]
+  resources :posts, only: [:show]
 
-  root 'posts#index'
+  root 'home#index'
 end
