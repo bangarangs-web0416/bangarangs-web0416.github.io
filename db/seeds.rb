@@ -3,6 +3,7 @@ is the foundation of all knowledge, and I have plenty of it."
 
 spock = Author.create(name: "Spock", status: "Admin", description: spock_description)
 kirk = Author.create(name: "Kirk")
+mc_coy = Author.create(name: "Dr. McCoy")
 
 spocks_blog = Blog.create(author: spock, title: "Spock's Blog")
 
@@ -23,3 +24,5 @@ second_post.tags << star_trek_tag
 
 spocks_comment = Comment.create(content: "Remember that folks.",
   post: second_post, guest: spock)
+mc_coys_comment = Comment.create(content: "Oh please...",
+  post: second_post, guest: mc_coy, created_at: Time.now - 1.day)
