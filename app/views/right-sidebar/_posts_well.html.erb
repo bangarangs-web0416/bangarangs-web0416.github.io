@@ -1,0 +1,14 @@
+<!-- Post Archive Well -->
+<div class="well">
+    <h4>Archive</h4>
+    <% @tags.each do |tag| %>
+      <h5><%= tag.name %></h5>
+
+      <ul class="list-unstyled">
+        <% tag.posts.each do |post| %>
+          <li><%= link_to post.title, post_path(post) %></li>
+        <% end %>
+      </ul>
+
+    <% end %>
+</div>

@@ -1,0 +1,30 @@
+<!-- Title -->
+<h1><%= most_recent_post.title %></h1>
+
+<!-- Date/Time -->
+<p><span class="glyphicon glyphicon-time"></span> <%= most_recent_post.created_at %></p>
+
+<hr>
+
+<!-- Preview Image -->
+<% if most_recent_post.image_url %>
+  <img class="img-responsive" src="<%= most_recent_post.image_url %>" alt="">
+<% end %>
+<hr>
+
+<!-- Post Content -->
+<p><%= most_recent_post.content %></p>
+
+<hr>
+
+<!-- Blog Comments -->
+<!-- Comments Form -->
+<%= render partial: 'comments/form', locals: { most_recent_post: most_recent_post } %>
+
+<hr>
+
+<!-- Posted Comments -->
+<div id="comments" post_id_<%= most_recent_post.id %>>
+  <%= render partial: 'comments/post_comments',
+  locals: { most_recent_post: most_recent_post } %>
+</div>

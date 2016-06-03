@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-lg-8">
+    <%= render partial: 'posts/post', locals: {
+      most_recent_post: @most_recent_post,
+      post: @post } %>
+  </div>
+
+  <%= render partial: 'right-sidebar/right_sidebar'%>
+</div>

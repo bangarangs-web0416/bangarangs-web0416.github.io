@@ -1,0 +1,4 @@
+<% most_recent_post.ascending_comments.each do |comment| %>
+<!-- Comment -->
+  <%= render partial: 'comments/comment', locals: { comment: comment } %>
+<% end %>

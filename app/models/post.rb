@@ -9,4 +9,8 @@ class Post < ActiveRecord::Base
 
   include ActiveModel::Validations
   validates_with AuthorStatusValidator, fields: [ :author ]
+
+  def ascending_comments
+    CommentSorter.new(comments).ascending
+  end
 end
