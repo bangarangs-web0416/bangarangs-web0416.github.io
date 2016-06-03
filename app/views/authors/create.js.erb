@@ -1,0 +1,5 @@
+var postId = "<%= @most_recent_post.id %>"
+
+$('div[post_id_'+ postId + ']').html("<%= j render partial: 'comments/post_comments', locals: { most_recent_post: @most_recent_post }%>")
+$('#author-name').val('')
+$('#comment-content').val('')

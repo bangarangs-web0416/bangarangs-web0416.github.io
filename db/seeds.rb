@@ -14,7 +14,7 @@ first_post = Post.create(title: "How to live long and prosper.",
 first_post.tags << star_trek_tag
 
 kirks_comment = Comment.create(content: "I agree, Spock.",
-  post: first_post, guest: kirk)
+  post: first_post, author: kirk)
 
 second_post = Post.create(title: "My logic",
   content: "The needs of the many outweight the needs of the few",
@@ -23,6 +23,6 @@ second_post = Post.create(title: "My logic",
 second_post.tags << star_trek_tag
 
 spocks_comment = Comment.create(content: "Remember that folks.",
-  post: second_post, guest: spock)
+  post: second_post, author: spock)
 mc_coys_comment = Comment.create(content: "Oh please...",
-  post: second_post, guest: mc_coy, created_at: Time.now - 1.day)
+  post: second_post, author: mc_coy, created_at: Time.now - 1.day)

@@ -19,12 +19,12 @@
 
 <!-- Blog Comments -->
 <!-- Comments Form -->
-<%= render partial: 'comments/form' %>
+<%= render partial: 'comments/form', locals: { most_recent_post: most_recent_post } %>
 
 <hr>
 
 <!-- Posted Comments -->
-<% most_recent_post.ascending_comments.each do |comment| %>
-<!-- Comment -->
-  <%= render partial: 'comments/comment', locals: { comment: comment } %>
-<% end %>
+<div id="comments" post_id_<%= most_recent_post.id %>>
+  <%= render partial: 'comments/post_comments',
+  locals: { most_recent_post: most_recent_post } %>
+</div>

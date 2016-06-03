@@ -1,9 +1,14 @@
 <div class="well">
-    <h4>Leave a Comment:</h4>
-    <form role="form">
-        <div class="form-group">
-            <textarea class="form-control" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <h4>Leave a Comment (be nice):</h4>
+    <%= form_for Author.new, remote: true do |f| %>
+
+      <%= f.text_field :name, id: 'author-name' %><br>
+
+      <%= fields_for Comment.new do |c| %>
+        <%= c.hidden_field :post_id, value: most_recent_post.id %>
+        <%= c.text_area :content, class: 'form-control', id: 'comment-content', size: 75 %><br>
+      <% end %>
+
+      <%= f.submit 'Create Comment', class: "btn btn-primary" %>
+    <% end %>
 </div>
