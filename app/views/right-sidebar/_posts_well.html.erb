@@ -6,7 +6,7 @@
 
       <ul class="list-unstyled">
         <% tag.posts.each do |post| %>
-          <li><%= link_to post.title, post_path(post) %></li>
+          <li><%= link_to post.title, post_path(post), remote: true%></li>
         <% end %>
       </ul>
 

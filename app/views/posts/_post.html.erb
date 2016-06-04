@@ -26,5 +26,5 @@
 <!-- Posted Comments -->
 <div id="comments" post_id_<%= post.id %>>
   <%= render partial: 'comments/post_comments',
-  locals: { most_recent_post: post } %>
+  locals: { post: post } %>
 </div>

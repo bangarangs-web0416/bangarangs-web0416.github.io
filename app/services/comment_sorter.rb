@@ -8,6 +8,6 @@ class CommentSorter
   def ascending
     @comments.sort_by do |comment|
       comment.created_at
-    end
+    end.reverse
   end
 end
