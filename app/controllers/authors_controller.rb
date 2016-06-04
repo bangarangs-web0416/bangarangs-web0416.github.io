@@ -4,7 +4,8 @@ class AuthorsController < ApplicationController
     author.comments.new(comment_params)
     author.save
 
-    @most_recent_post = most_recent_post
+    @post = Post.find(params[:comment][:post_id])
+
     respond_to do |format|
       format.js
     end
