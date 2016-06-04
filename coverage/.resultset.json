@@ -1,0 +1,169 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/controllers/posts_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/models/author.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/models/comment.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/models/post.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/validators/author_status_validator.rb": [
+        1,
+        1,
+        5,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/models/post_tag.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/models/tag.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/controllers/authors_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/controllers/comments_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/controllers/home_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/decorators/blog_decorator.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/models/blog.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/hlpolivy/Desktop/flatiron/bangarangs-web0416/app/services/comment_sorter.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1465006580
+  }
+}

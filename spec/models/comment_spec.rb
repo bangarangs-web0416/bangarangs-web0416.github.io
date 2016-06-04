@@ -14,7 +14,7 @@ RSpec.describe Comment, type: :model do
   end
 
   it "has content." do
-    first_comment = Comment.new(guest: @spock, post: @first_post)
+    first_comment = Comment.new(author: @spock, post: @first_post)
     expect(first_comment.save).to be_falsy
   end
 
@@ -23,8 +23,8 @@ RSpec.describe Comment, type: :model do
     expect(first_comment.save).to be_falsy
   end
 
-  it "belongs to an author with the alias guest" do
-    first_comment = Comment.new(guest: @kirk, content: "I agree, Spock.",
+  it "belongs to an author" do
+    first_comment = Comment.new(author: @kirk, content: "I agree, Spock.",
       post: @first_post)
     expect(first_comment.save).to be_truthy
   end
