@@ -40,6 +40,7 @@ group :development, :test do
   gem 'byebug'
   gem 'rails-erd'
   gem 'rspec-rails'
+  gem 'simplecov', :require => false
 end
 
 group :development do

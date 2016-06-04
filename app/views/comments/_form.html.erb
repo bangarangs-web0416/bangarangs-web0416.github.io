@@ -5,7 +5,7 @@
       <%= f.text_field :name, id: 'author-name' %><br>
 
       <%= fields_for Comment.new do |c| %>
-        <%= c.hidden_field :post_id, value: most_recent_post.id %>
+        <%= c.hidden_field :post_id, value: post.id %>
         <%= c.text_area :content, class: 'form-control', id: 'comment-content', size: 75 %><br>
       <% end %>
 
