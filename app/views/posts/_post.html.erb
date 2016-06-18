@@ -1,5 +1,5 @@
 <!-- Title -->
-<h1><%= post.title %></h1>
+<h2><%= post.title %></h2>
 
 <!-- Date/Time -->
 <p><span class="glyphicon glyphicon-time"></span> <%= post.created_at %></p>
@@ -8,12 +8,12 @@
 
 <!-- Preview Image -->
 <% if post.image_url %>
-  <img class="img-responsive" src="<%= post.image_url %>" alt="">
+  <img class="img-responsive" src="<%= post.image_url %>">
+  <hr>
 <% end %>
-<hr>
 
 <!-- Post Content -->
-<p><%= post.content %></p>
+<%= post.content.html_safe %>
 
 <hr>
 
@@ -24,7 +24,7 @@
 <hr>
 
 <!-- Posted Comments -->
-<div id="comments" post_id_<%= post.id %>>
+<div class="comments" post_id_<%= post.id %>>
   <%= render partial: 'comments/post_comments',
   locals: { post: post } %>
 </div>

@@ -1,8 +1,15 @@
 <div class="row">
-  <div class="col-lg-8" id="lead-post">
+  <%= render 'home/heading' %>
+
+  <!-- INSERT PREVIOUS POST CLOUD -->
+  <div class="col-lg-12" id="post-archive">
+    <%= render partial: 'posts/posts_well' %>
+  </div>
+  <!-- WITH TRIGGER FULL ARCHIVE MENU -->
+
+  <div class="col-lg-12" id="lead-post">
     <%= render partial: 'posts/post', locals: {
       post: @most_recent_post } %>
   </div>
 
-  <%= render partial: 'right-sidebar/right_sidebar'%>
 </div>
